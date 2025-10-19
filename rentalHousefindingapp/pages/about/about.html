@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Rental House Finder</title>
+
+  <!-- 🌐 Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 🌐 Flowbite CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- 🌐 Flowbite JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- 🧭 Navbar -->
+  <nav class="bg-gray-800 text-white px-6 py-4 flex justify-between items-center flex-wrap">
+    <!-- 🌟 Logo -->
+    <div class="flex items-center space-x-2">
+      <img src="../../assects/images/logo.webp" alt="Logo" class="w-10 h-10 rounded-full">
+      <span class="text-2xl font-bold"> Rental Finder</span>
+    </div>
+
+    <!-- 🍔 Hamburger -->
+    <button class="lg:hidden block text-white hover:text-gray-300 focus:outline-none" id="menu-btn">
+      ☰
+    </button>
+
+    <!-- 📝 Menu Items -->
+    <div class="hidden w-full lg:flex lg:w-auto mt-4 lg:mt-0 lg:space-x-6 flex-col lg:flex-row text-center" id="menu">
+      <a href="../../index.html" class="block py-2 lg:py-0 hover:underline">Home</a>
+      <a href="./about.html" class="block py-2 lg:py-0 hover:underline font-semibold">About</a>
+      <a href="../contact/contact.html" class="block py-2 lg:py-0 hover:underline">Contact</a>
+      <a href="../signup/signup.html" class="block py-2 lg:py-0 hover:underline">Sign Up</a>
+      <a href="../signin/signin.html" class="block py-2 lg:py-0 hover:underline">Sign In</a>
+      <a href="../blog/blog.html" class="block py-2 lg:py-0 hover:underline">Blog</a>
+    </div>
+  </nav>
+
+  <!-- 🧭 JS for Toggle -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- 📖 About Content -->
+  <div class="max-w-3xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+    <h2 class="text-3xl font-bold mb-4 text-center">About Our Project</h2>
+    <p class="text-gray-700 mb-4 text-center">
+      <strong>Rental House Finder</strong> is a simple web project developed to demonstrate HTML, CSS, and Tailwind concepts.
+      It allows users to explore rental houses and navigate through multiple pages smoothly.
+    </p>
+    <p class="text-gray-700 text-center">
+      This page is part of a Web Development Lab task focused on page linking, folder organization,
+      and responsive navbar design.
+    </p>
+
+    <!-- 👩‍💻 Team Section -->
+    <div class="mt-8 text-center">
+      <h3 class="text-2xl font-semibold mb-4">Our Team</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="p-4 bg-gray-100 rounded-lg shadow">
+          <h4 class="font-bold text-lg">Huda Naseem</h4>
+          <p class="text-gray-600 text-sm">Developer</p>
+        </div>
+        <div class="p-4 bg-gray-100 rounded-lg shadow">
+          <h4 class="font-bold text-lg">Meerab Abbas</h4>
+          <p class="text-gray-600 text-sm">Designer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 📌 Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+    © 2025 Rental Finder. All rights reserved.
+  </footer>
+
+</body>
+</html>
